@@ -45,7 +45,7 @@ else:
 
 # Write to /etc/dhcpcd.minion file
 
-os.system('sudo cp source/dhcp/dhcpcd.conf source/dhcp/dhcpcd.minion /etc/')
+os.system('sudo cp source/dhcp/dhcpcd.conf source/dhcp/dhcpcd.gelcam /etc/')
 
 # Open dhcpcd.minion
 with open('/etc/dhcpcd.minion', 'r') as file :
@@ -55,7 +55,7 @@ with open('/etc/dhcpcd.minion', 'r') as file :
 minion_dhcp = minion_dhcp.replace('XXX', str(IP_addr))
 
 # Write the file out again
-with open('/etc/dhcpcd.minion', 'w') as file:
+with open('/etc/dhcpcd.gelcam', 'w') as file:
   file.write(minion_dhcp)
 
 # Enable the splash screen easter egg
