@@ -58,6 +58,10 @@ minion_dhcp = minion_dhcp.replace('XXX', str(IP_addr))
 with open('/etc/dhcpcd.gelcam', 'w') as file:
   file.write(minion_dhcp)
 
+# Set up wifi
+
+os.system("sudo sh -c 'cat source/dhcp/wpa_supplicant.txt >> /etc/wpa_supplicant/wpa_supplicant.conf'")
+
 # Enable the splash screen easter egg
 	
 Debug = yes_no('Do you want to enable debug mode? [Y/N] : ')
