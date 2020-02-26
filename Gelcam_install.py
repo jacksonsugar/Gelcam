@@ -89,7 +89,7 @@ os.system('sudo cat source/minion_alias.txt >> /home/pi/.bashrc')
 os.system('mkdir /home/pi/Documents/Minion_tools /home/pi/Documents/minion_pics /home/pi/Documents/minion_data /home/pi/Documents/Minion_scripts')
 # Move scripts to local build
 os.system('sudo cp source/dhcp-configure.py source/dhcp-switch.py source/RTC-set.py source/Shutdown.py source/flasher.py /home/pi/Documents/Minion_tools/')
-os.system('sudo cp source/Class_Minion.py source/ADXL345_Sampler_100Hz.py source/Temp+Pres.py source/drivers/ms5837-python/ms5837.py source/RTC_Finish.py /home/pi/Documents/Minion_scripts')
+os.system('sudo cp source/Gelcam.py source/ADXL345_Sampler_100Hz.py source/Temp+Pres.py source/drivers/ms5837-python/ms5837.py source/RTC_Finish.py /home/pi/Documents/Minion_scripts')
 # Run driver install
 os.system('sudo python source/drivers/tsys01-python/setup.py install')
 
