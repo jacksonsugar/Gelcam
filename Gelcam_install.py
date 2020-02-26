@@ -48,7 +48,7 @@ else:
 os.system('sudo cp source/dhcp/dhcpcd.conf source/dhcp/dhcpcd.gelcam /etc/')
 
 # Open dhcpcd.minion
-with open('/etc/dhcpcd.minion', 'r') as file :
+with open('/etc/dhcpcd.gelcam', 'r') as file :
   minion_dhcp = file.read()
 
 # Replace the IP string
