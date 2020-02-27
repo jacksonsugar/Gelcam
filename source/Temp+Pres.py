@@ -48,6 +48,9 @@ time.sleep(1)
 
 timesample()
 
+data_count = str(len(os.listdir("/home/pi/Documents/minion_data/"))+1)
+samp_time = data_count + "-" + samp_time
+
 file_name = "/home/pi/Documents/Minion/minion_data/%s_T+D.txt" % samp_time
 
 file = open(file_name,"w+")
